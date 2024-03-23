@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.team {
+    width: 100%;
+    height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+}
+.info-team {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 992px) {
+    .info-team {
+        flex-direction: column;
+    }
+    .person {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .person {
+        width: 90%;
+    }
+}
+.person {
+    flex-basis: calc((100% - 120px ) / 3);
+    text-align: center;
+    position: relative;
+}
+.person  img {
+    width: 100%;
+}
+.person  img.pic {
+    filter: grayscale(100%);
+}
+.person .layer {
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid red;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.person:hover .layer {
+    max-height: 100%;
+}
+.person .text {
+    background-color: black;
+    color: white;
+    padding:  20px;
+    width: 80%;
+    position: absolute;
+    bottom: -40px;
+    left: 10%;
+    border-radius: 5px;
+}
+.person .text h2 {
+    font-size: normal;
+}
+.person .text p {
+    font-size: 13px;
+    color: #777;
+}
+.person .text .social {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.person .text .social i {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.person .text .social i.fa-facebook {
+    color: blue;
+}
+.person .text .social i.fa-youtube {
+    color: red;
+}
+.person .text .social i.fa-twitter {
+    color: rgb(107, 107, 255);
+}
+.person .text .social i.fa-instagram {
+    color: rgb(223, 35, 35);
+}
+.person:hover  .social {
+    max-height: 100px;
+}

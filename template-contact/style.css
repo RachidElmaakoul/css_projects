@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgb(73, 73, 218)) , url(../three/pic-3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 90%;
+    max-width: 600px;
+}
+input,
+textarea,
+button {
+    width: 100%;
+    padding:10px  ;
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+.item {
+    position: relative;
+    margin-bottom: 40px;
+}
+label {
+    color: white;
+    cursor: text;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .2s;
+}
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label{
+    top: -30px;
+    font-size: 14px;
+    background-color: transparent;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box .item {
+    flex-basis: 48%;
+}

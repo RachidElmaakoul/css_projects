@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>form input</title>
+</head>
+<body>
+    <div class="content">
+    <form >
+        <div class="box">
+            <div class="item">
+                <input type="text" name="uesename" id="name" required>
+                <label for="name" ><i class="fas fa-user"></i> your name</label>
+            </div>
+            <div class="item">
+                <input type="tel" name="number-phone" id="phone" required>
+                <label for="phone" ><i class="fas fa-phone"></i> your phone</label>
+            </div>
+        </div>
+        <div class="item">
+            <input type="email" name="uesename" id="email" required>
+            <label for="email" ><i class="fas fa-envelope-square"></i> your email</label>
+        </div>
+        <div class="item">
+            <textarea name="message" id="message"  rows="10" required ></textarea>
+            <label for="message"><i class="far fa-comment"></i> your message</label>
+        </div>
+        <button type="submit">submit <i class="far fa-paper-plane"></i></button>    
+    </form>
+    </div>
+</body>
+</html>
